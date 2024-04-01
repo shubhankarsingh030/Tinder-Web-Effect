@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tinder</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .details-container{
+            background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.711));
+        }
+    </style>
+</head>
+<body>
+    <div id="main" class="w-full h-screen bg-black ">
+        <div class="imagecontainer w-full h-screen relative overflow-hidden">
+            <div class="maincard z-[3] w-full absolute  h-full">
+                <img class="w-full h-full object-cover" src="" alt="">
+            </div>
+            <div class="incomingcard z-[2] w-full absolute  h-full">
+                <img class="w-full h-full object-cover" src="" alt="">
+            </div>
+        </div>
+        <div class="absolute top-0 left-0 z-[4] w-full h-screen flex flex-col justify-between">
+            <div class="navbar px-5 py-5 flex justify-between items-center text-white">
+                <div class="profileimg w-[3rem] h-[3rem] rounded-full overflow-hidden">
+                    <img class="w-full h-full object-cover" src="" alt="">
+                </div>
+                <h3 class="text-xl font-medium tracking-tighter">They liked you</h3>
+                <div class="chaticon relative flex justify-center items-center w-[3rem] h-[3rem] rounded-full bg-white/20">
+                    <i class="opacity-80 ri-wechat-line"></i>
+                    <div class="badge flex items-center justify-center rounded-full absolute top-0 right-0 -translate-y-[1px] -translate-x-[-5px] w-5 h-5 bg-red-500" >
+                        <h5 class="text-[13px] font-medium">3+</h5>
+                    </div>
+                </div>
+
+            </div>
+            <div class="details-container w-full">
+                <div class="details w-full px-5 py-5">
+                    <div class="elements location flex gap-4 text-white">
+                        <i class=" w-[2rem] h-[2rem] flex items-center justify-center rounded-full font-semibold bg-white text-black ri-corner-left-up-fill"></i>
+                        <h3></h3>
+                    </div>
+                    <div class="elements name flex gap-4 text-white mt-3">
+                        <h1 class="font-regular tracking-tighter text-6xl"></h1>
+                        <h1 class="font-regular tracking-tighter opacity-60 text-6xl"></h1>
+                    </div>
+                    <div class="elements tags flex gap-1.5 text-white mt-4">
+                    </div>
+                    <div class="elements bio text-white/80 mt-5">
+                        <h3 class="text-xl">Bio</h3>
+                        <p class="text-sm mt-3"></p>
+                    </div>
+                    <div class="elements flex items-start mt-10 gap-2">
+                        <button class="deny text-3xl py-3 font-semibold text-black/75 w-1/2 rounded-2xl bg-white">
+                            <i class="ri-close-circle-fill"></i>
+                        </button>
+                        <button class=" accept text-3xl py-3 font-semibold text-white w-1/2 rounded-2xl bg-[#fc5149]">
+                            <i class="ri-heart-2-fill"></i>
+                        </button>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+</html>
